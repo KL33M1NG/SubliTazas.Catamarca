@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | SUBLITAZAS CATAMARCA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="catalogo-page">
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><i class="fas fa-mountain"></i></span>
+                    SUBLITAZAS <span class="catamarca">CATAMARCA</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <div class="nav-whatsapp">
+                    <a href="https://wa.me/5493834771828" target="_blank" class="btn-whatsapp-small">
+                        <i class="fab fa-whatsapp"></i> Pedir ahora
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalogo-header">
+            <div class="container">
+                <h1>Nuestro Catálogo</h1>
+                <p>Elegí la categoría y descubrí productos únicos</p>
+                <!-- Filtros de categoría -->
+                <div class="filtros-categorias" id="filtros-container">
+                    <!-- Los botones se generan con JS -->
+                </div>
+            </div>
+        </section>
+
+        <section class="productos-lista">
+            <div class="container">
+                <div class="productos-grid" id="productos-container">
+                    <!-- Las tarjetas de productos se renderizan aquí con JS -->
+                </div>
+                <div id="no-resultados" class="no-resultados oculto">
+                    <i class="fas fa-search"></i>
+                    <p>No hay productos en esta categoría por el momento. ¡Pronto agregaremos más!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Mismo footer que index -->
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <i class="fas fa-mountain"></i> SUBLITAZAS CATAMARCA
+                </div>
+                <p>Sublimación que deja huella. Seguinos en redes:</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo completo</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fab fa-whatsapp"></i> +54 9 383 4771828</p>
+                <p><i class="far fa-envelope"></i> sublitzascatamarca@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Catamarca, Argentina</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SUBLITAZAS CATAMARCA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/productos.js"></script>
+</body>
+</html>
